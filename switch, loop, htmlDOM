@@ -1,0 +1,169 @@
+"switch" statement in a simple way!
+
+The "switch" statement is a type of control flow statement that allows you 
+to execute different code blocks based on the value of a variable or expression.
+
+Here's an example:
+
+
+let fruit = "apple";
+
+switch (fruit) {
+  case "banana":
+    console.log("This is a banana.");
+    break;
+  case "apple":
+    console.log("This is an apple.");
+    break;
+  case "orange":
+    console.log("This is an orange.");
+    break;
+  default:
+    console.log("I don't know what fruit this is.");
+}
+In this example, we have a variable called "fruit" that is assigned the value "apple". 
+The switch statement then evaluates the value of "fruit" and executes the code block 
+that matches the corresponding "case" statement. In this case, since the value of 
+"fruit" is "apple", the code block associated with the "case" statement for "apple" will be executed, 
+which is to log the message "This is an apple." to the console.
+
+The "default" case is executed if none of the "case" statements match the value of 
+the variable being evaluated.
+
+I hope this helps! Let me know if you have any other questions.
+
+
+
+
+
+
+
+
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// Using a for loop to iterate through the array
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
+
+// Using a for...of loop to iterate through the array
+for (let number of numbers) {
+  console.log(number);
+}
+
+// Using a forEach loop to iterate through the array
+numbers.forEach(function(number) {
+  console.log(number);
+});
+
+// Using a while loop to iterate through the array
+let i = 0;
+while (i < numbers.length) {
+  console.log(numbers[i]);
+  i++;
+}
+
+// Using a do...while loop to iterate through the array
+let j = 0;
+do {
+  console.log(numbers[j]);
+  j++;
+} while (j < numbers.length);
+
+// Using a for...in loop to loop through the object keys
+const person = {
+  name: "John",
+  age: 30,
+  gender: "male"
+};
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+
+
+In this example, we have an array called numbers that contains the values 1 through 6. 
+We use a for loop, a for...of loop, a forEach loop, a while loop, and a do...while loop 
+to iterate through the array and log each number to the console.
+
+We also use a for...in loop to loop through the keys of an object called person and log 
+each key-value pair to the console.
+
+By practicing with different types of loops, you can become more comfortable with using 
+them in your own code.
+
+
+
+
+
+
+
+
+Methods:
+
+querySelector: Returns the first element that matches a specified CSS selector.
+querySelectorAll: Returns all elements that match a specified CSS selector.
+getElementById: Returns the element with the specified ID.
+getElementsByClassName: Returns all elements with the specified class name.
+getElementsByTagName: Returns all elements with the specified tag name.
+createElement: Creates an HTML element with the specified tag name.
+appendChild: Adds a new child element to an existing element.
+removeChild: Removes a child element from an existing element.
+addEventListener: Adds an event listener to an element.
+
+
+Properties:
+
+innerHTML: Gets or sets the HTML content inside an element.
+innerText: Gets or sets the text content inside an element.
+style: Gets or sets the style properties of an element.
+value: Gets or sets the value of an input element.
+src: Gets or sets the source URL of an image or video element.
+classList: Gets or sets the CSS classes of an element.
+Here's an example of a HTML DOM code that you can use to practice JavaScript:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+  <script>
+    function changeText() {
+      const heading = document.querySelector('h1');
+      heading.innerText = 'New Heading';
+    }
+
+    function toggleImage() {
+      const image = document.querySelector('img');
+      if (image.style.display === 'none') {
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Heading</h1>
+  <p>Click the button to change the heading text.</p>
+  <button onclick="changeText()">Click me</button>
+  <p>Click the button to toggle the image.</p>
+  <button onclick="toggleImage()">Click me</button>
+  <img src="https://via.placeholder.com/150" alt="Placeholder image" style="display: block;">
+</body>
+</html>
+
+
+In this example, we have an HTML document that includes two buttons
+, a h1 element, a p element, and an img element.
+
+The first button has an onclick attribute that specifies a JavaScript function 
+called changeText(). When the button is clicked, the function selects the 
+h1 element using querySelector and changes its text content using innerText.
+
+The second button also has an onclick attribute that specifies a 
+JavaScript function called toggleImage(). When the button is clicked, 
+the function selects the img element using querySelector and toggles 
+its visibility using the style.display property.
+
+By practicing with HTML DOM code like this, you can learn how to manipulate HTML elements on the page using JavaScript.
